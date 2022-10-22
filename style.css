@@ -1,511 +1,491 @@
-/* =================
-  WRITE YOUR CSS HERE.
-  Check the ⌄ for help with formatting and validating your code.
-  You must write some CSS to complete this challenge.
-   ===================
-*/
 html,
 body {
   margin: 0;
   height: 100%;
 }
 
-/* don't edit this */
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.jest-lite-report__errors { display:none }
-
- 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
- nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 50px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
- }
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
- nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 45px; 
- }
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 45px;
+}
 
- .nav_link {
-    display: flex;
-    color: white;
-    font-size: 20px;
-    font-family: 'Rubik', sans-serif !important;
-    position: relative;
-    padding: 5 px 0;
-    overflow: hidden;
-    text-decoration: none;
-    transition: .3s;
- }
+.nav_link {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif !important;
+  position: relative;
+  padding: 5px 0;
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
- .nav_link:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: white;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
- }
- .nav_link:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: white;
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+.nav_link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 50%;
+  height: 2px;
+  background: white;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav_link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 50%;
+  height: 2px;
+  background: white;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav_link:hover {
-    color: white;
+  color: white;
 }
 
 .nav_link:hover::before {
-    right: 0;
+  right: 0;
 }
 .nav_link:hover:after {
-    left: 0;
+  left: 0;
 }
-  
+
 .c-site-header {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.4),rgba(12,3,51,0.4));
-    position: relative;
-    margin-top: -18px;
-    margin-left: 0;
-    padding: 0 5%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} 
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.4), rgba(12, 3, 51, 0.4));
+  position: relative;
+  margin-top: -18px;
+  margin-left: 0;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .back-video {
-    position: absolute;
-    margin-top: -100px;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  position: absolute;
+  margin-top: -100px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .text-on-video {
-    text-align: center;
-    font-size: 3.5vw;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  text-align: center;
+  font-size: 3.5vw;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
 }
 
 .text-on-video:hover {
-    -webkit-text-stroke: 2.5px white;
-    color: transparent;
-    transition: 0.5s;
-    cursor: pointer;
+  -webkit-text-stroke: 2.5px white;
+  color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .chapter2 {
-    width: 100%;
-    height: 940px;
-    background-color: #C0C0C0;
-    background-image: linear-gradient(rgba(12,3,51,0.5),rgba(12,3,51,0.2));
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;  
+  width: 100%;
+  height: 940px;
+  background-color: #c0c0c0;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.5), rgba(12, 3, 51, 0.2));
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .frame2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 600;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  color: white;
 }
 
 .title2 {
-    padding-bottom: 100px;
-    font-size: 50px;
+  padding-bottom: 100px;
+  font-size: 50px;
 }
 
 .text-chapter2 {
-    width: 80%;
-    font-size: 30px;
-    text-align: left;
+  width: 80%;
+  font-size: 30px;
+  text-align: left;
 }
 
-.chapter2 img { 
-    padding-left: 3vw;
-    width: 33%;
-    height: auto;
+.chapter2 img {
+  padding-left: 3vw;
+  width: 33%;
+  height: auto;
 }
 
 .chapter3 {
-    width: 100%;
-    height: 940px;
-    background-color: white;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 940px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .frame3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 600;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  color: black;
 }
 
 .title3 {
-    padding-bottom: 100px;
-    font-size: 45px;
+  padding-bottom: 100px;
+  font-size: 45px;
 }
 
 .text-chapter3 {
-    width: 80%;
-    font-size: 30px;
-    text-align: left;
+  width: 80%;
+  font-size: 30px;
+  text-align: left;
 }
 
-.chapter3 img { 
-    padding-right: 2vw;
-    width: 50%;
-    height: auto;
+.chapter3 img {
+  padding-right: 2vw;
+  width: 50%;
+  height: auto;
 }
 
 .chapter4 {
-    width: 100%;
-    height: 940px;
-    background-color: #C0C0C0;
-    background-image: linear-gradient(rgba(12,3,51,0.2),rgba(12,3,51,0.5));
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 940px;
+  background-color: #c0c0c0;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.2), rgba(12, 3, 51, 0.5));
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .frame4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 600;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: 600;
+  color: white;
 }
 
 .title4 {
-    padding-bottom: 100px;
-    font-size: 45px;
+  padding-bottom: 100px;
+  font-size: 45px;
 }
 
 .text-chapter4 {
-    width: 80%;
-    font-size: 30px;
-    text-align: left;  
+  width: 80%;
+  font-size: 30px;
+  text-align: left;
 }
 
-.chapter4 img { 
-    padding-left: 3vw;
-    width: 33%;
-    height: auto;
+.chapter4 img {
+  padding-left: 3vw;
+  width: 33%;
+  height: auto;
 }
 
 .chapter5 {
-    width: 100%;
-    height: 940px;
-    background-color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  height: 940px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .motto1 {
-    width: 40%;
-    color: black;
-    font-size: 30px;
-    text-align: center; 
+  width: 40%;
+  color: black;
+  font-size: 30px;
+  text-align: center;
 }
 
 .motto2 {
-    width: 40%;
-    color: black;
-    font-size: 40px;
-    text-align: center;
-    padding-bottom: 70px;
+  width: 40%;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 70px;
 }
 
 .chapter6 {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 10px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .pictures {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
 }
 
-
 .picture {
-    width: 12vw;
-    height: auto;
-    padding-right: 10px;    
+  width: 12vw;
+  height: auto;
+  padding-right: 10px;
 }
 
 .picture:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .text-chapter6 {
-    width: 70%;
-    color: black;
-    font-size: 40px;
-    text-align: left;
-    font-family: 'Odibee Sans', cursive;
-    padding-left: 10px;
-    padding-bottom: 30px;
+  width: 70%;
+  color: black;
+  font-size: 40px;
+  text-align: left;
+  font-family: "Odibee Sans", cursive;
+  padding-left: 10px;
+  padding-bottom: 30px;
 }
 
 .youtube_video {
-    width: 60%;
-    height: 50%;
+  width: 60%;
+  height: 50%;
 }
 
 .topbutton {
-    position: fixed;
-    bottom: 40px;
-    right: -450px;
+  position: fixed;
+  bottom: 40px;
+  right: -450px;
 }
 
 .find_me {
-    text-align: center;
-    font-size: 40px;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 
 .social_buttons {
-    text-align: center;
-    padding-bottom: 30px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-
 .social_buttons li {
-   list-style: none;
-   margin: 1px 1px;
-   display: inline-block;
-   padding: 10px 10px;
-   color: white;
-   transition: 0.5s;
-   font-size: 20px; 
+  list-style: none;
+  margin: 1px 1px;
+  display: inline-block;
+  padding: 10px 10px;
+  color: white;
+  transition: 0.5s;
+  font-size: 20px;
 }
 
 .social_buttons li:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .text_love {
-    text-align: center;
-    padding-bottom: 40px;
-    font-size: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 20px;
 }
 
 .text-contact {
-    text-align: center;
-    font-size: 40px;
-    padding-top: 25px;
-    font-weight: 500;
-    font-family: 'Tiro Tamil', serif;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 25px;
+  font-weight: 500;
+  font-family: "Tiro Tamil", serif;
 }
 
-
-
 @media (max-width: 830px) {
-    nav {
-        width: 40%;
-        padding: 50px;
-     }
-    .nav_link {
-        font-size: 18px;
-        position: relative;
-        padding: 3px 0; 
-     }
+  nav {
+    width: 40%;
+    padding: 50px;
+  }
+  .nav_link {
+    font-size: 18px;
+    position: relative;
+    padding: 3px 0;
+  }
 
-     .chapter2 {
+  .chapter2 {
     width: 100%;
     height: 600px;
-    }
-     .text-chapter2 {
-        font-size: 20px;
-    }
-    .title2 {
-        padding-bottom: 40px;
-        font-size: 30px;
-    }
-    .chapter3 {
-        width: 100%;
-        height: 600px;
-    }
-    .text-chapter3 {
-        font-size: 20px;
-    }
-    .title3 {
-        padding-bottom: 40px;
-        font-size: 30px;
-    }
-    .chapter4 {
-        width: 100%;
-        height: 600px;
-    }
-    .text-chapter4 {
-        font-size: 20px;
-    }
-    .title4 {
-        padding-bottom: 40px;
-        font-size: 25px;
-    }
-    .chapter5 {
-        width: 100%;
-        height: 600px;
-    }
-    .motto1 {
-        width: 50%;
-        font-size: 20px;
-    }
-    
-    .motto2 {
-        width: 60%;
-        font-size: 25px;
-    }
-    .text-contact {
-        font-size: 25px;
-    }
-    .text-chapter6 {
-        font-size: 27px;
-    }
-    .find_me {
-        font-size: 25px;
-    }
+  }
+  .text-chapter2 {
+    font-size: 20px;
+  }
+  .title2 {
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  .chapter3 {
+    width: 100%;
+    height: 600px;
+  }
+  .text-chapter3 {
+    font-size: 20px;
+  }
+  .title3 {
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  .chapter4 {
+    width: 100%;
+    height: 600px;
+  }
+  .text-chapter4 {
+    font-size: 20px;
+  }
+  .title4 {
+    padding-bottom: 40px;
+    font-size: 25px;
+  }
+  .chapter5 {
+    width: 100%;
+    height: 600px;
+  }
+  .motto1 {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .motto2 {
+    width: 60%;
+    font-size: 25px;
+  }
+  .text-contact {
+    font-size: 25px;
+  }
+  .text-chapter6 {
+    font-size: 27px;
+  }
+  .find_me {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 480px) {
-    nav {
-        width: 60%;
-        padding: 50px;
-     }
-    .nav_link {
-        font-size: 18px;
-        position: relative;
-        padding: 3px 0; 
-     }
+  nav {
+    width: 60%;
+    padding: 50px;
+  }
+  .nav_link {
+    font-size: 18px;
+    position: relative;
+    padding: 3px 0;
+  }
 
-     .chapter2 {
+  .chapter2 {
     width: 100%;
     height: 450px;
-    }
-     .text-chapter2 {
-        font-size: 17px;
-        font-weight: 400;
-    }
-    .title2 {
-        padding-bottom: 5px;
-        font-size: 20px;
-    }
-    .chapter3 {
-        width: 100%;
-        height: 450px;
-    }
-    .text-chapter3 {
-        font-size: 17px;
-        font-weight: 400;
-    }
-    .title3 {
-        padding-bottom: 5px;
-        font-size: 20px;
-    }
-    .chapter4 {
-        width: 100%;
-        height: 450px;
-    }
-    .text-chapter4 {
-        font-size: 17px;
-        font-weight: 400;
-    }
-    .title4 {
-        padding-bottom: 5px;
-        font-size: 17px;
-    }
-    .chapter5 {
-        width: 100%;
-        height: 450px;
-    }
-    .motto1 {
-        width: 50%;
-        font-size: 17px;
-    }
-    
-    .motto2 {
-        width: 60%;
-        font-size: 22px;
-    }
-    .text-contact {
-        font-size: 22px;
-    }
-    .text-chapter6 {
-        font-size: 23px;
-    }
-    .find_me {
-        font-size: 22px;
-    }
-}
+  }
+  .text-chapter2 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .title2 {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  .chapter3 {
+    width: 100%;
+    height: 450px;
+  }
+  .text-chapter3 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .title3 {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  .chapter4 {
+    width: 100%;
+    height: 450px;
+  }
+  .text-chapter4 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .title4 {
+    padding-bottom: 5px;
+    font-size: 17px;
+  }
+  .chapter5 {
+    width: 100%;
+    height: 450px;
+  }
+  .motto1 {
+    width: 50%;
+    font-size: 17px;
+  }
 
- 
-  
+  .motto2 {
+    width: 60%;
+    font-size: 22px;
+  }
+  .text-contact {
+    font-size: 22px;
+  }
+  .text-chapter6 {
+    font-size: 23px;
+  }
+  .find_me {
+    font-size: 22px;
+  }
+}

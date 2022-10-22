@@ -1,344 +1,196 @@
-<!-- =================
-  WRITE YOUR HTML HERE
-
-You only need to write the HTML that goes inside the <body> tag. To add things to the <head>, click the ⚙️ 
-   ===================
--->
-
-<!--- All the tests are red! You have to make them green. 
-
-Q How do you make the tests pass?
-A Meet the requirements!
-
-Make the first test pass by adding a <header> </header>-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="Personal page"
-      content="This is the pesronal page of Vitalina Kuzmenko"
-    />
-    <meta name="viewport" content="width=720, initial-scale=1" />
-    <title>Vitalina</title>
-    <script
-      src="https://kit.fontawesome.com/e8c9266318.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Odibee+Sans&family=Rubik:wght@300&family=Tiro+Tamil&display=swap");
-    </style>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
 
-  <body>
-    <header id="header" class="c-site-header">
-      <nav aria-label="Main Site Links.">
-        <ul>
-          <li>
-            <a class="nav_link" href="#about_me" aria-label="Read more about me"
-              >ABOUT ME</a
-            >
-          </li>
-          <li>
-            <a
-              class="nav_link"
-              href="#my_pet"
-              aria-label="Read more about my pet"
-              >MY PET</a
-            >
-          </li>
-          <li>
-            <a
-              class="nav_link"
-              href="#programming"
-              aria-label="Read more about programming in my life"
-              >PROGRAMMING</a
-            >
-          </li>
-          <li>
-            <a
-              class="nav_link"
-              href="#motto"
-              aria-label="Read about my life motto"
-              >MOTTO</a
-            >
-          </li>
-          <li>
-            <a class="nav_link" href="#contact" aria-label="Contact with me"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Personal page" content="This is the personal page of Vitalina Kuzmenko" />
+  <meta name="viewport" content="width=720, initial-scale=1" />
+  <title>Vitalina</title>
 
-      <div class="text-on-video">
-        <h1>Hey, I'm Vitalina</h1>
-      </div>
-      <video loop muted autoplay class="back-video">
-        <source
-          src="https://www.dropbox.com/s/f7d9v6z88oyjinb/%E3%83%84%20Vita%20Leena%20_%20Paris_%20620px.mp4?dl=0&raw=1"
-        />
-      </video>
-    </header>
+  <script src="https://kit.fontawesome.com/e8c9266318.js" crossorigin="anonymous">
+  </script>
 
-    <main class="container">
-      <div id="about_me" class="chapter2">
-        <div class="frame2">
-          <p
-            class="title2"
-            data-aos="fade-left"
-            data-aos-duration="700"
-            data-aos-once="false"
-          >
-            --- ABOUT ME ---
-          </p>
-          <p
-            class="text-chapter2"
-            data-aos="fade-left"
-            data-aos-duration="700"
-            data-aos-once="false"
-          >
-            Hey, I’m Vitalina! I’m from Ukraine.<br />
-            I came to UK with my husband and a cat to start new life.<br />
-            I like making photos, editing video, listening to music, dancing,
-            singing, traveling and walking with my lovely cat.
-          </p>
-        </div>
-        <img
-          data-aos="fade-right"
-          data-aos-duration="700"
-          data-aos-once="false"
-          src="https://www.dropbox.com/s/5e53465apwxzxe5/IMG_3158.JPG?dl=0&raw=1"
-          alt="The girl staying on the street."
-        />
-      </div>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Odibee+Sans&family=Rubik:wght@300&family=Tiro+Tamil&display=swap");
+  </style>
 
-      <div id="my_pet" class="chapter3">
-        <div class="frame3">
-          <p
-            class="title3"
-            data-aos="fade-right"
-            data-aos-duration="700"
-            data-aos-once="false"
-          >
-            --- MY PET ---
-          </p>
-          <p
-            class="text-chapter3"
-            data-aos="fade-right"
-            data-aos-duration="700"
-            data-aos-once="false"
-          >
-            It’s Pan Kot (english: Mr. Cat). <br />
-            He travels with me almost everywhere. <br />
-            He was in Poland, in Latvia, in Ukraine and now he is in UK.
-          </p>
-        </div>
-        <img
-          data-aos="fade-left"
-          data-aos-duration="700"
-          data-aos-once="false"
-          src="https://www.dropbox.com/s/o889yllxviw1yqc/MHPEWHQwuuibIrtrcbvfgFP879sru6aPdXzWUS-HAbtTkmcmoMQDxVIx3QVbJ0YtBJgqhnC2.jpg?dl=0&raw=1"
-          alt="The cat laying on the bed."
-        />
-      </div>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-      <div id="programming" class="chapter4">
-        <div class="frame4">
-          <p
-            class="title4"
-            data-aos="fade-left"
-            data-aos-duration="700"
-            data-aos-once="false"
-          >
-            --- PROGRAMMING ---
-          </p>
-          <p
-            class="text-chapter4"
-            data-aos="fade-left"
-            data-aos-duration="700"
-            data-aos-once="false"
-          >
-            I started my journey with coding 2 years ago. I was learning Java.
-            <br />
-            My brother opened the door to the world of coding for me. But my
-            heart is not in the backend. <br />
-            That's why I've got a strong feeling to start a new journey into the
-            visual world of the frontend.
-          </p>
-        </div>
-        <img
-          data-aos="fade-right"
-          data-aos-duration="700"
-          data-aos-once="false"
-          src="https://www.dropbox.com/s/9n7ktjh9j1bhqjt/IMG_3177.JPG?dl=0&raw=1"
-          alt="The girl staying on the street."
-        />
-      </div>
+<body>
+  <header id="header" class="c-site-header">
+    <nav aria-label="Main Site Links.">
+      <ul>
+        <li>
+          <a class="nav_link" href="#about_me" aria-label="Read more about me">ABOUT ME</a>
+        </li>
+        <li>
+          <a class="nav_link" href="#my_pet" aria-label="Read more about my pet">MY PET</a>
+        </li>
+        <li>
+          <a class="nav_link" href="#programming" aria-label="Read more about programming in my life">PROGRAMMING</a>
+        </li>
+        <li>
+          <a class="nav_link" href="#motto" aria-label="Read about my life motto">MOTTO</a>
+        </li>
+        <li>
+          <a class="nav_link" href="#contact" aria-label="Contact with me">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div id="motto" class="chapter5">
-        <p
-          class="motto1"
-          data-aos="fade-down"
-          data-aos-duration="700"
-          data-aos-once="false"
-        >
-          ------ My life motto ------
+    <div class="text-on-video">
+      <h1>Hey, I'm Vitalina</h1>
+    </div>
+    <video loop muted autoplay class="back-video">
+      <source
+        src="https://www.dropbox.com/s/f7d9v6z88oyjinb/%E3%83%84%20Vita%20Leena%20_%20Paris_%20620px.mp4?dl=0&raw=1" />
+    </video>
+  </header>
+
+  <main class="container">
+    <div id="about_me" class="chapter2">
+      <div class="frame2">
+        <p class="title2" data-aos="fade-left" data-aos-duration="700" data-aos-once="false">
+          --- ABOUT ME ---
         </p>
-
-        <p
-          class="motto2"
-          data-aos="fade-up"
-          data-aos-duration="700"
-          data-aos-once="false"
-        >
-          “Everything is possible if you really want it”
+        <p class="text-chapter2" data-aos="fade-left" data-aos-duration="700" data-aos-once="false">
+          Hey, I’m Vitalina! I’m from Ukraine.<br />
+          I came to UK with my husband and a cat to start new life.<br />
+          I like making photos, editing video, listening to music, dancing,
+          singing, traveling and walking with my lovely cat.
         </p>
-        <iframe
-          class="youtube_video"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="false"
-          src="https://www.youtube.com/embed/bFIB05LGtMs"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
       </div>
-      <hr />
-    </main>
-    <footer id="contact" class="c-site-footer">
-      <p class="text-contact">CONTACT</p>
+      <img data-aos="fade-right" data-aos-duration="700" data-aos-once="false"
+        src="https://www.dropbox.com/s/5e53465apwxzxe5/IMG_3158.JPG?dl=0&raw=1" alt="The girl staying on the street." />
+    </div>
 
-      <div
-        class="chapter6"
-        data-aos="fade"
-        data-aos-duration="700"
-        data-aos-once="false"
-      >
-        <p class="text-chapter6">Do you have instagram?</p>
-        <div class="pictures">
-          <a target="_blank" href="https://www.instagram.com/p/CdRPUgporAr/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/boael2nedaienat/1.jpg?dl=0&raw=1"
-              alt="The girl sitting on the monument"
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/p/CaMz2F7ggQV/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/92b0stz76pepks8/2.jpg?dl=0&raw=1"
-              alt="Close portrait of the girl"
-          /></a>
-
-          <a target="_blank" href="https://www.instagram.com/p/CUXWFzDIx1e/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/2424dcw6h0fh6t1/3.jpg?dl=0&raw=1"
-              alt="The girl sitting on the table"
-          /></a>
-
-          <a target="_blank" href="https://www.instagram.com/p/CEt9z9KH_Ge/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/hb0qktr9t2itadp/4.jpg?dl=0&raw=1"
-              alt="Walking girl"
-          /></a>
-
-          <a target="_blank" href="https://www.instagram.com/p/CFC0lWOnboV/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/xqpizng0c7noit3/5.jpg?dl=0&raw=1"
-              alt="Picture of a shirt on a girl"
-          /></a>
-
-          <a target="_blank" href="https://www.instagram.com/p/CFHxzUyni-Q/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/6u8kledk5ebl8rz/6.jpg?dl=0&raw=1"
-              alt="The girl is staying in the dress"
-          /></a>
-
-          <a target="_blank" href="https://www.instagram.com/p/CFM4NQ-nEaY/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/azcnqu72kt5io0d/7.jpg?dl=0&raw=1"
-              alt="The girl stands with her back to the camera"
-          /></a>
-
-          <a target="_blank" href="https://www.instagram.com/p/B6Dwnb_Hgb9/"
-            ><img
-              class="picture"
-              src="https://www.dropbox.com/s/iq2aumv5b3x051u/8.jpg?dl=0&raw=1"
-              alt="There are a girl and a boy together on the picture"
-          /></a>
-        </div>
+    <div id="my_pet" class="chapter3">
+      <div class="frame3">
+        <p class="title3" data-aos="fade-right" data-aos-duration="700" data-aos-once="false">
+          --- MY PET ---
+        </p>
+        <p class="text-chapter3" data-aos="fade-right" data-aos-duration="700" data-aos-once="false">
+          It’s Pan Kot (english: Mr. Cat). <br />
+          He travels with me almost everywhere. <br />
+          He was in Poland, in Latvia, in Ukraine and now he is in UK.
+        </p>
       </div>
+      <img data-aos="fade-left" data-aos-duration="700" data-aos-once="false"
+        src="https://www.dropbox.com/s/o889yllxviw1yqc/MHPEWHQwuuibIrtrcbvfgFP879sru6aPdXzWUS-HAbtTkmcmoMQDxVIx3QVbJ0YtBJgqhnC2.jpg?dl=0&raw=1"
+        alt="The cat laying on the bed." />
+    </div>
 
-      <div>
-        <p class="find_me">Find me here</p>
+    <div id="programming" class="chapter4">
+      <div class="frame4">
+        <p class="title4" data-aos="fade-left" data-aos-duration="700" data-aos-once="false">
+          --- PROGRAMMING ---
+        </p>
+        <p class="text-chapter4" data-aos="fade-left" data-aos-duration="700" data-aos-once="false">
+          I started my journey with coding 2 years ago. I was learning Java.
+          <br />
+          My brother opened the door to the world of coding for me. But my
+          heart is not in the backend. <br />
+          That's why I've got a strong feeling to start a new journey into the
+          visual world of the frontend.
+        </p>
       </div>
+      <img data-aos="fade-right" data-aos-duration="700" data-aos-once="false"
+        src="https://www.dropbox.com/s/9n7ktjh9j1bhqjt/IMG_3177.JPG?dl=0&raw=1" alt="The girl staying on the street." />
+    </div>
 
-      <div class="social_buttons" aria-label="Social Media Links">
-        <ul>
-          <li
-            class="youtube_button"
-            aria-label="Click here to see my youtube page"
-          >
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UCges-GqEFvhayKoSI4xKW3A"
-            >
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </li>
-          <li
-            class="instagram_button"
-            aria-label="Click here to see my instagram page"
-          >
-            <a target="_blank" href="https://www.instagram.com/vita.leena/">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-          <li
-            class="spotify_button"
-            aria-label="Click here to see my favorite spotify playlist"
-          >
-            <a
-              target="_blank"
-              href="https://open.spotify.com/playlist/4tmwcSvFVTAFfyIbYtYsLG?si=JHGAwQEfTUqcSaxK_OpVZQ&nd=1"
-            >
-              <i class="fa-brands fa-spotify"></i>
-            </a>
-          </li>
-        </ul>
+    <div id="motto" class="chapter5">
+      <p class="motto1" data-aos="fade-down" data-aos-duration="700" data-aos-once="false">
+        ------ My life motto ------
+      </p>
+
+      <p class="motto2" data-aos="fade-up" data-aos-duration="700" data-aos-once="false">
+        “Everything is possible if you really want it”
+      </p>
+      <iframe class="youtube_video" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false"
+        src="https://www.youtube.com/embed/bFIB05LGtMs" title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <hr />
+  </main>
+  <footer id="contact" class="c-site-footer">
+    <p class="text-contact">CONTACT</p>
+
+    <div class="chapter6" data-aos="fade" data-aos-duration="700" data-aos-once="false">
+      <p class="text-chapter6">Do you have instagram?</p>
+      <div class="pictures">
+        <a target="_blank" href="https://www.instagram.com/p/CdRPUgporAr/"><img class="picture"
+            src="https://www.dropbox.com/s/boael2nedaienat/1.jpg?dl=0&raw=1"
+            alt="The girl sitting on the monument" /></a>
+        <a target="_blank" href="https://www.instagram.com/p/CaMz2F7ggQV/"><img class="picture"
+            src="https://www.dropbox.com/s/92b0stz76pepks8/2.jpg?dl=0&raw=1" alt="Close portrait of the girl" /></a>
+
+        <a target="_blank" href="https://www.instagram.com/p/CUXWFzDIx1e/"><img class="picture"
+            src="https://www.dropbox.com/s/2424dcw6h0fh6t1/3.jpg?dl=0&raw=1" alt="The girl sitting on the table" /></a>
+
+        <a target="_blank" href="https://www.instagram.com/p/CEt9z9KH_Ge/"><img class="picture"
+            src="https://www.dropbox.com/s/hb0qktr9t2itadp/4.jpg?dl=0&raw=1" alt="Walking girl" /></a>
+
+        <a target="_blank" href="https://www.instagram.com/p/CFC0lWOnboV/"><img class="picture"
+            src="https://www.dropbox.com/s/xqpizng0c7noit3/5.jpg?dl=0&raw=1" alt="Picture of a shirt on a girl" /></a>
+
+        <a target="_blank" href="https://www.instagram.com/p/CFHxzUyni-Q/"><img class="picture"
+            src="https://www.dropbox.com/s/6u8kledk5ebl8rz/6.jpg?dl=0&raw=1"
+            alt="The girl is staying in the dress" /></a>
+
+        <a target="_blank" href="https://www.instagram.com/p/CFM4NQ-nEaY/"><img class="picture"
+            src="https://www.dropbox.com/s/azcnqu72kt5io0d/7.jpg?dl=0&raw=1"
+            alt="The girl stands with her back to the camera" /></a>
+
+        <a target="_blank" href="https://www.instagram.com/p/B6Dwnb_Hgb9/"><img class="picture"
+            src="https://www.dropbox.com/s/iq2aumv5b3x051u/8.jpg?dl=0&raw=1"
+            alt="There are a girl and a boy together on the picture" /></a>
       </div>
-      <p class="text_love">Made with love</p>
-      <div class="topbutton">
-        <a href="#header">
-          <img
-            src="https://www.dropbox.com/s/hmfbmjybuuoxd7h/premium-icon-up-arrow-2626996.png?dl=0&raw=1"
-            alt="Press to go to the head of the page"
-            style="width: 10%; height: auto"
-          />
-        </a>
-      </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 3000,
-        once: true,
-      });
-    </script>
-    <aside
-      id="tests"
-      aria-label="Test Readout."
-      aria-live="polite"
-      style="overflow: auto"
-    ></aside>
-  </body>
+    </div>
+
+    <div>
+      <p class="find_me">Find me here</p>
+    </div>
+
+    <div class="social_buttons" aria-label="Social Media Links">
+      <ul>
+        <li class="youtube_button" aria-label="Click here to see my youtube page">
+          <a target="_blank" href="https://www.youtube.com/channel/UCges-GqEFvhayKoSI4xKW3A">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li class="instagram_button" aria-label="Click here to see my instagram page">
+          <a target="_blank" href="https://www.instagram.com/vita.leena/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="spotify_button" aria-label="Click here to see my favorite spotify playlist">
+          <a target="_blank"
+            href="https://open.spotify.com/playlist/4tmwcSvFVTAFfyIbYtYsLG?si=JHGAwQEfTUqcSaxK_OpVZQ&nd=1">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="text_love">Made with love</p>
+    <div class="topbutton">
+      <a href="#header">
+        <img src="https://www.dropbox.com/s/hmfbmjybuuoxd7h/premium-icon-up-arrow-2626996.png?dl=0&raw=1"
+          alt="Press to go to the head of the page" style="width: 10%; height: auto" />
+      </a>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: true,
+    });
+  </script>
+  <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow: auto"></aside>
+</body>
+
 </html>
