@@ -1,5 +1,5 @@
 
-# The Personal Websiter
+# The Personal Website
 
 Hi there! It is my first personal website and my first website written using HTML and CSS.
 
